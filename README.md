@@ -10,9 +10,6 @@ Rust crate for reducing LLM token consumption in production applications.
 - Token estimation utilities
 
 ## Motivation
-In snailer.ai (AI coding agent, 5.1K+ downloads), we reduced average token usage by ~30-40% while maintaining response quality.
+In snailer.ai (AI coding agent, 5.4K+ downloads), we reduced average token usage by ~30-40% while maintaining response quality.
 
-## Quick Start
-```toml
-[dependencies]
-llm-token-saver-rs = "0.1.0"  # soon on crates.io
+
