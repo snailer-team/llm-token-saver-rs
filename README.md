@@ -1,2 +1,18 @@
 # llm-token-saver-rs
-A Rust library for optimizing LLM token usage through intelligent prompt compression, caching, selective truncation, and context engineering. Production-tested in snailer.ai. Reduce inference costs and improve efficiency for agents and LLMs.
+
+Rust crate for reducing LLM token consumption in production applications.
+
+## Features
+- Prompt compression & summarization
+- Prefix/context caching
+- Selective token injection (playbook-style)
+- Dynamic truncation & budgeting
+- Token estimation utilities
+
+## Motivation
+In snailer.ai (AI coding agent, 5.1K+ downloads), we reduced average token usage by ~30-40% while maintaining response quality.
+
+## Quick Start
+```toml
+[dependencies]
+llm-token-saver-rs = "0.1.0"  # soon on crates.io
