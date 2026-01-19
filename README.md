@@ -15,15 +15,15 @@ This crate is extracted from `snailer.ai` (AI coding agent; 5.4K+ downloads). In
 
 ## Install
 
-### Option A: crates.io (after publishing)
+Published on crates.io: https://crates.io/crates/llm-token-saver-rs
+
+### Option A: crates.io
 
 ```bash
 cargo add llm-token-saver-rs
 ```
 
-This works only after the crate is published to crates.io.
-
-### Option B: Git dependency (works now)
+### Option B: Git dependency
 
 ```bash
 cargo add llm-token-saver-rs --git https://github.com/snailer-team/llm-token-saver-rs
