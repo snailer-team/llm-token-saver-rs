@@ -15,8 +15,27 @@ This crate is extracted from `snailer.ai` (AI coding agent; 5.4K+ downloads). In
 
 ## Install
 
+### Option A: crates.io (after publishing)
+
 ```bash
 cargo add llm-token-saver-rs
+```
+
+This works only after the crate is published to crates.io.
+
+### Option B: Git dependency (works now)
+
+```bash
+cargo add llm-token-saver-rs --git https://github.com/snailer-team/llm-token-saver-rs
+```
+
+### Option C: Local path (monorepo / local dev)
+
+Add this to your app’s `Cargo.toml`:
+
+```toml
+[dependencies]
+llm-token-saver-rs = { path = "../llm-token-saver-rs" }
 ```
 
 In code, import it as `llm_token_saver_rs`:
