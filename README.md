@@ -13,6 +13,40 @@ This crate is extracted from `snailer.ai` (AI coding agent; 5.4K+ downloads). In
   - Selective context filtering for long text blobs (files/search results)
 - Roadmap (not implemented yet in this repo): prefix/context caching, playbook-style token injection, provider integrations.
 
+## Structure (current)
+
+```text
+llm-token-saver-rs/
+  Cargo.toml
+  README.md
+  src/
+    lib.rs                     # public API (re-exports)
+    client.rs                  # trait LlmClient
+    unified_context_manager.rs # UnifiedContextManager + compression tiers/budgeting
+    selective_context.rs       # SelectiveContextFilter + BudgetPolicy + split_sentences()
+  examples/
+    efficiency.rs              # deterministic Tier 1 demo
+  tests/
+    efficiency_smoke.rs        # basic invariants/smoke tests
+```
+
+```mermaid
+flowchart TB
+  subgraph Crate["llm-token-saver-rs (library crate)"]
+    lib["src/lib.rs<br/>pub mod + re-exports"]
+    client["src/client.rs<br/>trait LlmClient"]
+    ucm["src/unified_context_manager.rs<br/>UnifiedContextManager<br/>Compression tiers (1–5), budgeting, repair helpers"]
+    sc["src/selective_context.rs<br/>SelectiveContextFilter<br/>BudgetPolicy, split_sentences()"]
+    lib --> client
+    lib --> ucm
+    lib --> sc
+    ucm -. "Tier 2–5 uses" .-> client
+  end
+
+  ex["examples/efficiency.rs"] --> ucm
+  test["tests/efficiency_smoke.rs"] --> ucm
+```
+
 ## Install
 
 Published on crates.io: https://crates.io/crates/llm-token-saver-rs
