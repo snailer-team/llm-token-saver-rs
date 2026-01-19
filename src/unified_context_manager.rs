@@ -369,7 +369,8 @@ impl UnifiedContextManager {
         // Gemini family
         else if model_lower.contains("gemini-2.5")
             || model_lower.contains("gemini-2.5-pro")
-            || model_lower.contains("gemini-3")  // Catch-all for gemini-3-pro, gemini-3-flash, etc.
+            || model_lower.contains("gemini-3")
+        // Catch-all for gemini-3-pro, gemini-3-flash, etc.
         {
             1_000_000
         } else {
@@ -2338,7 +2339,9 @@ Provide a concise, query-focused summary:"#,
 
         match api_client.send_message_simple(vec![summary_prompt]).await {
             Ok(summary) => Ok(summary),
-            Err(_) => Ok(Self::local_query_fallback_summary(messages, user_query, max_tokens)),
+            Err(_) => Ok(Self::local_query_fallback_summary(
+                messages, user_query, max_tokens,
+            )),
         }
     }
 

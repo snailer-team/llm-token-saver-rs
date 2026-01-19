@@ -1,0 +1,4 @@
+# Assign default reviewers for every file in the repo.
+# Replace `@your-org/your-team` (or `@your-username`) with real GitHub users/teams.
+* @your-org/your-team
+

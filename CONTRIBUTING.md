@@ -8,7 +8,7 @@ Thanks for contributing!
 - Build: `cargo build`
 - Tests: `cargo test`
 - Format: `cargo fmt`
-- Lint: `cargo clippy --all-targets --all-features -D warnings`
+- Lint: `cargo clippy --all-targets --all-features`
 
 ## Guidelines
 
@@ -21,3 +21,15 @@ Thanks for contributing!
 - Include a short summary and rationale.
 - If you change behavior, add/adjust tests.
 - If you add a feature that requires an LLM call, gate it behind a feature flag and keep a non-network default.
+
+## Repository settings (maintainers)
+
+To prevent merges without review, enable branch protection on the default branch (e.g. `main`):
+
+- Settings → Branches → Add branch protection rule
+- Enable:
+  - Require a pull request before merging
+  - Required approvals: at least 1
+  - (Optional) Require review from Code Owners (uses `.github/CODEOWNERS`)
+  - Require status checks to pass before merging (select the `PR checks` jobs)
+  - (Recommended) Do not allow bypassing the above settings

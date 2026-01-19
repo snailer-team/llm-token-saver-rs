@@ -70,8 +70,10 @@ async fn main() -> anyhow::Result<()> {
     let budget = 8_000;
     let bounded = mgr.enforce_budget(compressed, budget);
     let bounded_tokens = mgr.estimate_tokens(&bounded);
-    println!("budget:        {} (bounded_tokens={})", budget, bounded_tokens);
+    println!(
+        "budget:        {} (bounded_tokens={})",
+        budget, bounded_tokens
+    );
 
     Ok(())
 }
-

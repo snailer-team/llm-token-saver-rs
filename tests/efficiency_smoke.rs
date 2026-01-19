@@ -61,4 +61,3 @@ fn enforce_budget_never_exceeds() {
         budget
     );
 }
-
