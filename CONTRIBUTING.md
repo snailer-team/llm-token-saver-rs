@@ -32,4 +32,5 @@ To prevent merges without review, enable branch protection on the default branch
   - Required approvals: at least 1
   - (Optional) Require review from Code Owners (uses `.github/CODEOWNERS`)
   - Require status checks to pass before merging (select the `PR checks` jobs)
+  - Do not allow force pushes
   - (Recommended) Do not allow bypassing the above settings
