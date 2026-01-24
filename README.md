@@ -2,7 +2,7 @@
 
 Rust crate for reducing LLM token consumption in production applications.
 
-This crate is extracted from `snailer.ai` (AI coding agent; 5.4K+ downloads). In production we reduced average token usage by ~30–40% while maintaining response quality.
+This crate is extracted from `snailer.ai` (AI coding agent; 6K+ downloads). In production we reduced average token usage by ~30–40% while maintaining response quality.
 
 ## Status
 - Alpha: API may change.
