@@ -58,8 +58,6 @@ This repo is the raw code only. The guides explain everything.
 
       </a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <h3><a href="[https://x.com/YOUR_HANDLE/status/YOUR_SHORTHAND_ARTICLE_ID](https://x.com/america_snail/status/2015123590430306476?s=20)">(Shorthand Guide)</a></h3>
       Setup, foundations, Concept, etc <b>Read this first.</b>
