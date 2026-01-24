@@ -4,7 +4,7 @@
 
 If you believe you have found a security vulnerability, please report it privately.
 
-- Email: security@snailer.team (or open a GitHub Security Advisory if enabled for the repository)
+- Email: team@snailer.ai (or open a GitHub Security Advisory if enabled for the repository)
 - Please include:
   - Affected versions/commit
   - Reproduction steps or a proof-of-concept
