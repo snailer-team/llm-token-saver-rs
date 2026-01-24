@@ -30,22 +30,6 @@ llm-token-saver-rs/
     efficiency_smoke.rs        # basic invariants/smoke tests
 ```
 
-```mermaid
-flowchart TB
-  subgraph Crate["llm-token-saver-rs (library crate)"]
-    lib["src/lib.rs<br/>pub mod + re-exports"]
-    client["src/client.rs<br/>trait LlmClient"]
-    ucm["src/unified_context_manager.rs<br/>UnifiedContextManager<br/>Compression tiers (1–5), budgeting, repair helpers"]
-    sc["src/selective_context.rs<br/>SelectiveContextFilter<br/>BudgetPolicy, split_sentences()"]
-    lib --> client
-    lib --> ucm
-    lib --> sc
-    ucm -. "Tier 2–5 uses" .-> client
-  end
-
-  ex["examples/efficiency.rs"] --> ucm
-  test["tests/efficiency_smoke.rs"] --> ucm
-```
 ## The Guides
 
 This repo is the raw code only. The guides explain everything.
