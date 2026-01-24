@@ -49,11 +49,11 @@ flowchart TB
 ## The Guides
 
 This repo is the raw code only. The guides explain everything.
-<br>
   <a href="[https://x.com/YOUR_HANDLE/status/YOUR_SHORTHAND_ARTICLE_ID](https://x.com/america_snail/status/2015123590430306476?s=20)">
        <img width="592" height="415" alt="스크린샷 2026-01-24 오전 10 42 19" src="https://github.com/user-attachments/assets/706c7c7e-f83d-4425-a41a-614ec138028b" />
  </a>
+ <br>
  <a href="[https://x.com/YOUR_HANDLE/status/YOUR_SHORTHAND_ARTICLE_ID](https://x.com/america_snail/status/2015123590430306476?s=20)">[Article Link]</a>
  <br>
- <b>Setup, foundations, Concept, etc <b>Read this first.</b>
+ <b>Setup, foundations, Concept, etc Read this first.</b>
       
